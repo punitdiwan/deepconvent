@@ -93,7 +93,7 @@ const SchoolFacilities = () => {
                                         <div className="col-md-4 col-sm-12 sm_img_1" style={{ textAlign: "center" }}>
                                             <center>
                                                 <div className="xlas sm_img_1"> 
-                                                    <img src="/images/director.png" alt="Avatar" style={{ width: '150px', height: '150px' }} />
+                                                    <img src="/1.png" alt="Avatar" style={{ width: '150px', height: '150px' }} />
                                                 </div>
                                                 <div className="dash_bordre1"></div>
                                             </center>
@@ -102,7 +102,7 @@ const SchoolFacilities = () => {
                                         <div className=" col-md-4 col-sm-12 sm_img_2" style={{ textAlign: "center" }}>
                                             <center>
                                                 <div className="xlas sm_img_2">
-                                                    <img src="/images/g1.jpg" alt="Avatar" style={{ width: '150px', height: '150px' }} />
+                                                    <img src="/22.jpeg" alt="Avatar" style={{ width: '150px', height: '150px' }} />
                                                 </div>
                                                 <div className="dash_bordre1"></div>
                                             </center>
@@ -111,7 +111,7 @@ const SchoolFacilities = () => {
                                         <div className="pb-5 mb-5 col-md-4 col-sm-12 sm_img_3" style={{ textAlign: "center" }}>
                                             <center>
                                                 <div className="xlas sm_img_3 ">
-                                                    <img src="/images/g9.jpg" alt="Avatar" style={{ width: '150px', height: '150px' }} />
+                                                    <img src="/3.png" alt="Avatar" style={{ width: '150px', height: '150px' }} />
                                                 </div>
                                                 <div className="dash_bordre1"></div>
                                             </center>
@@ -128,10 +128,10 @@ const SchoolFacilities = () => {
                                     <div className="flip-card xlas11">
                                         <div className="flip-card-inner xlas1 ">
                                             <div className="flip-card-front "   >
-                                                <img src="/images/managment.jpg" alt="Avatar" className="flip_img" style={{ width: '330px', height: '330px' }} />
+                                                <img src="/p.jpeg" alt="Avatar" className="flip_img" style={{ width: '330px', height: '330px' }} />
                                             </div>
                                             <div className="flip-card-back">
-                                                <img src="/images/managment.jpg" alt="Avatar" className="flip_img" style={{ width: '330px', height: '330px' }} />
+                                                <img src="/a.jpeg" alt="Avatar" className="flip_img" style={{ width: '330px', height: '330px' }} />
                                             </div>
                                         </div> 
                                     </div>

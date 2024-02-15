@@ -45,7 +45,7 @@ const HomePageSlider = () => {
                 src={slide.image.data.full_url}
                 alt={`Slide ${index + 1}`}
                 width={800}
-                height={300}
+                height={420}
               />
             )}
           </div>
