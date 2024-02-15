@@ -65,7 +65,7 @@ const Header = () => {
                 <div className="col-lg-4 col-9 d-flex justify-content-center">
             <Link href="/#">
              
-            <img className="mt-3" src="/logo.png" style={{ width: "110px", height: "80px" }} />
+            <img className="mt-3" src="/d.png" style={{ width: "110px", height: "80px" }} />
                </Link>
              
             <h4 className=" fs-2 ms-5 logo_name" style={{ marginTop: "30px" }}><b> Deep Convent School</b>
