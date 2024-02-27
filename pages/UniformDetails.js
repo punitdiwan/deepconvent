@@ -1,46 +1,54 @@
-
-
 import { SRLWrapper } from "simple-react-lightbox";
-import Layout from '../Component/Layout'
+import Layout from "../Component/Layout";
 import useSWR from "swr";
-  
-const AdmissionProcess = () => { 
+import { useState, useEffect } from "react";
 
-  
-  const slides = [
-     
-    { title: "/images/is16.jpg", description: 'View Gallery' },
-    { title: "/images/is12.jpg ", description: 'View Gallery' },
-    { title: " /images/is8.jpg ", description: 'View Gallery' },
-    { title: " /images/is14.jpg ", description: 'View Gallery' },
-    { title: "/images/is15.jpg  ", description: 'View Gallery' },
-    { title: " /images/is16.jpg ", description: 'View Gallery' },
-    
+const AdmissionProcess = () => {
+  // const API = "https://cms.maitretech.com/deepconvent/items/uniformdetails?fields=*.*";
 
-];
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://cms.maitretech.com/deepconvent/items/uniformdetails?fields=*.*"
+        );
+        if (!response.ok) {
+          throw new Error("Network response was not ok ");
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+        console.log(jsonData, "jsondata aksdjh");
+      } catch (error) {
+        console.log("Fetch error: ", error);
+      }
+    };
+    fetchData();
+  }, []);
 
 
-    return (
-        <Layout>
-            <SRLWrapper> 
+ console.log("data",typeof data,data)
+  let slides = data?.data?.map((item) => item.uniform.data.full_url);
+
+  console.log("slides", slides);
+
+  return (
+    <Layout>
+      <SRLWrapper>
         <div className="container-fluid">
           <div className="mb-3 row">
-          {slides.map((item, i) => {
+            {slides?.map((item, i) => {
               return (
                 <div key={i} className="col-lg-4 col-md-6 col-sm-6 ">
-                  <img 
-                    src={item?.title}
-                    className="mt-3 imght "
-                    alt="no_img"
-                  />
+                  <img src={item} className="mt-3 imght " alt="no_img" />
                 </div>
               );
             })}
           </div>
         </div>
       </SRLWrapper>
-        </Layout>
-    )
-
-}
-export default AdmissionProcess
+    </Layout>
+  );
+};
+export default AdmissionProcess;

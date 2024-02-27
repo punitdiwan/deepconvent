@@ -32,7 +32,7 @@ const Contact = () => {
                     <div className="col-lg-5 col-md-4 col-sm-6 drt_img mb-3 mt-5"
                         style={{ textAlign: "center" }}>
                         <img
-                            src="/images/Wishdom school.jpg"
+                            src="/deeplogo.jpeg"
                             alt='Director'
                             style={{ width: "100%",height:"75%" }} />
 
