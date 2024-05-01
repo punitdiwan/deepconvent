@@ -177,7 +177,7 @@ if (error) {
                 }}
               >
                 <span className="p-2">
-                  <span style={{ fontSize: "70px" }}>&ldquo;</span>
+                  <span style={{ fontSize: "60px" }}>&ldquo;</span>
                   <h4
                     style={{
                       marginTop: "-80px",
@@ -192,7 +192,7 @@ if (error) {
                   </h4>
                   <span
                     style={{
-                      fontSize: "70px",
+                      fontSize: "60px",
                       float: "right",
                       marginTop: "-50px",
                     }}
@@ -210,7 +210,7 @@ if (error) {
                 }}
               >
                 <span className="p-2">
-                  <span style={{ fontSize: "70px" }}>&ldquo;</span>
+                  <span style={{ fontSize: "60px" }}>&ldquo;</span>
                   <h4
                     style={{
                       marginTop: "-80px",
@@ -221,11 +221,11 @@ if (error) {
                       fontFamily: "Georgia, serif",
                     }}
                   >
-                   Best School in Ayodhya Bypass, Ayodhya Nagar, Bhopal
+                   Best School in Ayodhya Bypass, Ayodhya Nagar, Bhopal.
                   </h4>
                   <span
                     style={{
-                      fontSize: "70px",
+                      fontSize: "60px",
                       float: "right",
                       marginTop: "-50px",
                     }}
@@ -243,7 +243,7 @@ if (error) {
                 }}
               >
                 <span className="p-2">
-                  <span style={{ fontSize: "70px" }}>&ldquo;</span>
+                  <span style={{ fontSize: "60px" }}>&ldquo;</span>
                   <h4
                     style={{
                       marginTop: "-80px",
@@ -258,7 +258,7 @@ if (error) {
                   </h4>
                   <span
                     style={{
-                      fontSize: "70px",
+                      fontSize: "60px",
                       float: "right",
                       marginTop: "-50px",
                     }}
@@ -276,7 +276,7 @@ if (error) {
                 }}
               >
                 <span className="p-2">
-                  <span style={{ fontSize: "70px" }}>&ldquo;</span>
+                  <span style={{ fontSize: "60px" }}>&ldquo;</span>
                   <h4
                     style={{
                       marginTop: "-80px",
@@ -287,11 +287,11 @@ if (error) {
                       fontFamily: "Georgia, serif",
                     }}
                   >
-                    Was Afraid of Board Exams but that to Deep Convent school for making me Clear Exam with Distinction.
+                    Was Afraid of Board Exams but thanks to Deep Convent school for making me Clear Exam with Distinction.
                   </h4>
                   <span
                     style={{
-                      fontSize: "70px",
+                      fontSize: "60px",
                       float: "right",
                       marginTop: "-50px",
                     }}
