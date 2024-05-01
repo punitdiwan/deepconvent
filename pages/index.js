@@ -16,8 +16,8 @@ export default function Home() {
         <SchoolFacilities/>
         <AboutSchool/>
         
-        {/* <HomePageGallery/>
-        <HomeNewsClder/> */}
+        {/* <HomePageGallery/> */}
+        {/* <HomeNewsClder/> */}
       </Layout> 
     </div>
   )

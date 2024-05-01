@@ -188,8 +188,7 @@ if (error) {
                       fontFamily: "Georgia, serif",
                     }}
                   >
-                    I'm embarrassed of my dad dancing. No one can see my dad
-                    dancing.
+                   Thanks to Deep convent school for Proving me best opportunities.
                   </h4>
                   <span
                     style={{
@@ -222,7 +221,7 @@ if (error) {
                       fontFamily: "Georgia, serif",
                     }}
                   >
-                    When I grow up I'm going to be a grown-up.
+                   Best School in Ayodhya Bypass, Ayodhya Nagar, Bhopal
                   </h4>
                   <span
                     style={{
@@ -255,7 +254,7 @@ if (error) {
                       fontFamily: "Georgia, serif",
                     }}
                   >
-                    I feel like my favorite food is not playdough anymore.{" "}
+                    Best Math Teacher available In Deep Convent School.{" "}
                   </h4>
                   <span
                     style={{
@@ -288,8 +287,7 @@ if (error) {
                       fontFamily: "Georgia, serif",
                     }}
                   >
-                    I changed my mind, I don't like Tuesdays and Fridays. I like
-                    Winter.
+                    Was Afraid of Board Exams but that to Deep Convent school for making me Clear Exam with Distinction.
                   </h4>
                   <span
                     style={{
