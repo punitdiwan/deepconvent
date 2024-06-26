@@ -47,14 +47,14 @@ function Director() {
                                 style={{ width: "100%",height:"400px" }} />
                         </div>
                         <div className="col-lg-6 col-md-7 col-sm-6 col-xs-12 mb-4">
-                            <h1>Principle Message</h1>
+                            <h1>Principal Message</h1>
                             <p className="ps-4" style={{ color: "#777", lineHeight: "1.7" }}>
                                 
                         {principleMessage}
                             </p>
                             <p className="ps-4 pt-4"><b> Thank you.</b> </p>
                             <p className="ps-4">  <b>  Name : {principleName} </b> </p>
-                            <p className="ps-4"> <b> Principle, Deep Convent School </b> </p>
+                            <p className="ps-4"> <b> Principal, Deep Convent School </b> </p>
                         </div>
 
                     </div>

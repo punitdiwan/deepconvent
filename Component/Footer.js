@@ -77,17 +77,17 @@ const Footer = () => {
                     <li>
                       <b> SCHOOL HOURS</b>
                     </li>
-                    <li>07.30 a.m. to 12.45 p.m. for Classes VI to XII</li>
-                    <li>12.50 a.m. to 05.15 p.m. for Classes Nursery to V</li>
+                    <li>09.00 a.m. to 02.30 p.m. for Classes VI to XII</li>
+                    <li>12.50 p.m. to 05.15 p.m. for Classes Nursery to V</li>
                     <li>
                       <b> OFFICE HOURS</b>
                     </li>
-                    <li>8.00 a.m. to 1.30 p.m.</li>
-                    <li>
+                    <li>9.00 a.m. to 02.30 p.m.</li>
+                    {/* <li>
                       <b> TEACHERS WILL BE AVAILABLE ON</b>
                     </li>
                     <li>11.30 a.m. & 12.45 p.m.</li>
-                    <li>( On the Saturday of every week )</li>
+                    <li>( On the Saturday of every week )</li> */}
                   </ul>
                 </div>
               </div>

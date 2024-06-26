@@ -117,7 +117,7 @@ const Header = () => {
                                       </li>
                                       <li>
                                         <Link href="Principle">
-                                          <a>Principle Desk</a>
+                                          <a>Principal Desk</a>
                                         </Link>
                                       </li>
                                       <li>
