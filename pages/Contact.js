@@ -44,7 +44,7 @@ const Contact = () => {
                             <h3 style={{ color: "#93b3ce", margintop: "10px" }}>Get in <b> touch</b></h3>
                             <p style={{ marginTop: "10px" }}>We're happy to help you with any questions you may have. Feel free to schedule a tour,
                                 call us or fill out the contact form and we will get right back in touch with you
-                            </p>
+                            </p>                            
                             <h3 style={{ color: "#93b3ce", margintop: "10px" }}>Our  <b> Locations</b></h3>
                             <p><b> Bhopal Location </b></p>
                             <div className="p-3">
