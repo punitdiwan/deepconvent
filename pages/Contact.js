@@ -57,9 +57,9 @@ const Contact = () => {
                             <p> General Email:Deepshikshasamiti@gmail.com</p>
                             <h2 style={{ color: "#93b3ce", margintop: "10px", marginBottom:"10px" }}>
                                 School   <b> Hours</b></h2>
-                            <h5>Monday - saturday 7:30am to 12:45pm for Classes VI to XII</h5>
+                            <h5>Monday - saturday 9.00 a.m. to 02.30 p.m. for Classes VI to XII</h5>
                             <h5>
-                                Monday - saturday 12:50pm to 05:15pm for Nursery to V</h5>
+                                Monday - saturday 9.00 a.m. to 02.30 p.m. for Nursery to V</h5>
                         </div>
                     </div>
                 </div>
