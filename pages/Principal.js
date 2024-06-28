@@ -4,7 +4,7 @@ import Layout from '../Component/Layout'
 import axios from 'axios';
 // import React, { useState } from "react";
 
- 
+                                           
 function Director() {
 
    const fetcher = async (url) =>{
