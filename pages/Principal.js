@@ -6,7 +6,7 @@ import axios from 'axios';
 
                                            
 function Director() {
-
+                                                
    const fetcher = async (url) =>{
     const response = await axios.get(url);
     return response.data;
