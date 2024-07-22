@@ -5,25 +5,25 @@ import useSWR from 'swr';
 
 const Contact = () => {
 
-    const fetcher = async (url) =>{
+    // const fetcher = async (url) =>{
 
-        const response = await axios.get(url);
-        return response.data;
-    };
+    //     const response = await axios.get(url);
+    //     return response.data;
+    // };
 
-    const API_ENDPOINT = "https://cms.maitretech.com/newwisdom/items/config?fields=*.*.*";
-    const {data , error} = useSWR(API_ENDPOINT,fetcher);
+    // const API_ENDPOINT = "https://cms.maitretech.com/newwisdom/items/config?fields=*.*.*";
+    // const {data , error} = useSWR(API_ENDPOINT,fetcher);
     
-    if (error) {
-        return <div>Error loading data</div>;
-      }
+    // if (error) {
+    //     return <div>Error loading data</div>;
+    //   }
     
-      if (!data) {
-        return <div>Loading...</div>;
-      }
+    //   if (!data) {
+    //     return <div>Loading...</div>;
+    //   }
 
-      const contact = data.data;
-      console.log("cheaking",contact);
+    //   const contact = data.data;
+    //   console.log("cheaking",contact);
 
     return (
         <Layout>
