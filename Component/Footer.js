@@ -11,25 +11,25 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import axios from "axios";
 import useSWR from "swr";
 const Footer = () => {
-  const fetcher = async (url) => {
-    const response = await axios.get(url);
+  // const fetcher = async (url) => {
+  //   const response = await axios.get(url);
 
-    return response.data;
-  };
+  //   return response.data;
+  // };
 
-  const API_ENDPOINT =
-    " https://cms.maitretech.com/newwisdom/items/gallery?fields=*.*.*";
-  const { data, error } = useSWR(API_ENDPOINT, fetcher);
-  if (error) {
-    return <div>Error loading data</div>;
-  }
+  // const API_ENDPOINT =
+  //   " https://cms.maitretech.com/newwisdom/items/gallery?fields=*.*.*";
+  // const { data, error } = useSWR(API_ENDPOINT, fetcher);
+  // if (error) {
+  //   return <div>Error loading data</div>;
+  // }
 
-  if (!data) {
-    return <div>Loading...</div>;
-  }
+  // if (!data) {
+  //   return <div>Loading...</div>;
+  // }
 
-  const useData = data.data;
-  const phoneNumber = useData[0]?.phone;
+  // const useData = data.data;
+  // const phoneNumber = useData[0]?.phone;
 
   return (
     <>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <div className="asdfs"></div>
                 <div style={{ marginTop: "-18px" }} className="pb-5 mb-5">
                   <Link href="#">
-                    <a>
+                    
                       <button
                         className="px-4 py-3 btn_btm"
                         style={{
@@ -53,7 +53,7 @@ const Footer = () => {
                       >
                         Get in Touch
                       </button>
-                    </a>
+                    
                   </Link>
                 </div>
                 <iframe
@@ -77,12 +77,12 @@ const Footer = () => {
                     <li>
                       <b> SCHOOL HOURS</b>
                     </li>
+                    <li>09.00 a.m. to 02.30 p.m. for Classes Nursery to V</li>
                     <li>09.00 a.m. to 02.30 p.m. for Classes VI to XII</li>
-                    <li>9.00 a.m. to 02.30 p.m. for Classes Nursery to V</li>
                     <li>
                       <b> OFFICE HOURS</b>
                     </li>
-                    <li>9.00 a.m. to 02.30 p.m.</li>
+                    <li>09.00 a.m. to 02.30 p.m.</li>
                     {/* <li>
                       <b> TEACHERS WILL BE AVAILABLE ON</b>
                     </li>
@@ -133,8 +133,7 @@ const Footer = () => {
             <div className="pt-5 mt-5 col-lg-2 bg_footer_right">
               <h3 style={{ textAlign: "center" }}>Social Profiles</h3>
               <span className="pt-5 d-flex justify-content-center">
-                <Link href="/">
-                  <a
+                  <p
                     className="me-3 fb_clr"
                     style={{
                       border: " ",
@@ -142,14 +141,14 @@ const Footer = () => {
                       borderRadius: "30px",
                     }}
                   >
+                <Link href="/">
                     <FacebookIcon
                       style={{ fontSize: "29px", color: "gray" }}
                       className="fb_clr"
                     />{" "}
-                  </a>
                 </Link>
-                <Link href="/">
-                  <a
+                  </p>
+                  <p
                     className="me-3 insta_clr"
                     style={{
                       border: "  ",
@@ -157,12 +156,13 @@ const Footer = () => {
                       borderRadius: "30px",
                     }}
                   >
+                <Link href="/">
                     <InstagramIcon
                       style={{ fontSize: "29px", color: "gray" }}
                       className="insta_clr"
                     />{" "}
-                  </a>
                 </Link>
+                  </p>
                 {/* <Link href="#">
                   <a
                     className="ytb_clr"
@@ -187,18 +187,18 @@ const Footer = () => {
         <div class="col-md-8 text-center">
           <p style={{ color: "#555" }}>
             © Copyright{" "}
-            <a href="#" className="text-light">
+            <Link href="#" className="text-light">
               Deep Convent School
-            </a>{" "}
+            </Link>{" "}
             All Rights Reserved.
           </p>
         </div>
         <div class="col-md-4 text-center">
           <p style={{ color: "#555" }}>
             Created with ❤️{" "}
-            <a href="#" style={{ color: "#ccc" }}>
+            <Link href="#" style={{ color: "#ccc" }}>
               Maitretech Solution
-            </a>
+            </Link>
           </p>
         </div>
       </div>
