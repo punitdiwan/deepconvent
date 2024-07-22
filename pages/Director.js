@@ -37,7 +37,7 @@ function Director() {
         "https://cms.maitretech.com/deepconvent/items/director_message?fields=*.*"
       );
       // const data = res.data.data[0];
-      // setData(res.data.data[0]);
+      setData(res.data.data[0]);
     } catch (error) {
       console.log("errors++++", error);
     }

@@ -86,7 +86,7 @@
 
 
 
-import { SRLWrapper } from "simple-react-lightbox";
+// import { SRLWrapper } from "simple-react-lightbox";
 import Layout from "../Component/Layout";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -111,7 +111,6 @@ const Gallery = () => {
 
   return (
     <Layout>
-      <SRLWrapper>
         <div className="container-fluid">
           <div className="mb-3 row">
             {data.map((item) => (
@@ -125,7 +124,6 @@ const Gallery = () => {
             ))}
           </div>
         </div>
-      </SRLWrapper>
     </Layout>
   );
 };

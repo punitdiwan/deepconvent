@@ -3,7 +3,7 @@ import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import CloudQueueIcon from "@material-ui/icons/CloudQueue";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { Slider } from "@material-ui/core";
+// import { Slider } from "@material-ui/core";
 import axios from "axios";
 import useSWR from "swr";
 const AboutSchool = () => {
