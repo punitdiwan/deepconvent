@@ -1,4 +1,4 @@
-import { SRLWrapper } from "simple-react-lightbox";
+// import { SRLWrapper } from "simple-react-lightbox";
 import Layout from "../Component/Layout";
 import useSWR from "swr";
 import { useState, useEffect } from "react";
@@ -35,7 +35,6 @@ const AdmissionProcess = () => {
 
   return (
     <Layout>
-      <SRLWrapper>
         <div className="container-fluid">
           <div className="mb-3 row">
             {slides?.map((item, i) => {
@@ -47,7 +46,6 @@ const AdmissionProcess = () => {
             })}
           </div>
         </div>
-      </SRLWrapper>
     </Layout>
   );
 };

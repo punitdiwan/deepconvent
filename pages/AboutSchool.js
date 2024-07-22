@@ -3,30 +3,30 @@ import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import CloudQueueIcon from "@material-ui/icons/CloudQueue";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { Slider } from "@material-ui/core";
+// import { Slider } from "@material-ui/core";
 import axios from "axios";
 import useSWR from "swr";
 const AboutSchool = () => {
-  const fetcher = async (url) => {
-    const response = await axios.get(url);
-    return response.data;
-  };
-const API_ENDPOINT = "https://cms.maitretech.com/deepconvent/items/about_school?fields=*.*";
+//   const fetcher = async (url) => {
+//     const response = await axios.get(url);
+//     return response.data;
+//   };
+// const API_ENDPOINT = "https://cms.maitretech.com/deepconvent/items/about_school?fields=*.*";
 
-const {data, error} = useSWR(API_ENDPOINT,fetcher);
-console.log("Data: ", data,"Error:",error);
+// const {data, error} = useSWR(API_ENDPOINT,fetcher);
+// console.log("Data: ", data,"Error:",error);
 
 
-if (error) {
-    return <div>Error loading data</div>;
-  }
+// if (error) {
+//     return <div>Error loading data</div>;
+//   }
 
-  if (!data) {
-    return <div>Loading...</div>;
-  }
+//   if (!data) {
+//     return <div>Loading...</div>;
+//   }
 
-  const about = data.data;
-  console.log(about)
+//   const about = data.data;
+//   console.log(about)
 
 
   return (

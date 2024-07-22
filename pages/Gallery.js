@@ -1,61 +1,134 @@
-import { SRLWrapper } from "simple-react-lightbox";
-import Layout from "../Component/Layout";
-import useSWR from "swr";
-import axios from "axios";
+// import { SRLWrapper } from "simple-react-lightbox";
+// import Layout from "../Component/Layout";
+// import useSWR from "swr";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
 
-const Gallery = () => {
-  // Function to fetch data from API
-  const fetcher = async (url) => {
-    const response = await axios.get(url);
-    return response.data;
-  };
+// const Gallery = () => {
+//   // const fetcher = async (url) => {
+//   //   const response = await axios.get(url);
+//   //   return response.data;
+//   // };
 
-  // Replace API_ENDPOINT with the actual API endpoint
-  const API_ENDPOINT = "https://cms.maitretech.com/deepconvent/items/gallery?fields=*.*";
-  const { data, error } = useSWR(API_ENDPOINT, fetcher);
+//   // const API_ENDPOINT = "https://cms.maitretech.com/deepconvent/items/gallery?fields=*.*";
+//   // const { data, error } = useSWR(API_ENDPOINT, fetcher);
   
 
-  if (error) {
-    return <div>Error loading data</div>;
-  }
+//   // if (error) {
+//   //   return <div>Error loading data</div>;
+//   // }
 
-  if (!data) {
-    return <div>Loading...</div>;
-  }
+//   // if (!data) {
+//   //   return <div>Loading...</div>;
+//   // }
 
-  // Extract the image data from the API response
-  const images = data.data;
-  console.log("check", images)
+//   // const images = data.data;
+//   // console.log("check", images)
+
+//   const [data, setData] = useState({});
+
+//   useEffect(() => {
+//     getData();
+//   }, []);
+
+//   const getData = async () => {
+//     try {
+//       const res = await axios.get(
+//         "https://cms.maitretech.com/deepconvent/items/gallery?fields=*.*"
+//       );
+      
+//       // const data = res.data.data[0];
+//       setData(res.data.data);
+//     } catch (error) {
+//       console.log("errors++++",error);
+//     }
+//   };
+//   console.log(data)
+// // const arr=[{id:1},{id:2}]
+// // console.log("  gfuyhvhgf",typeof(arr))
+//   return (
+//     <Layout>
+//       <SRLWrapper>
+//         <div className="container-fluid">
+//           <div className="mb-3 row">
+//             {/* <div className="col-lg-4">
+//               <img src="./a.jpeg" alt="Pics" className="mt-3 imght"/>
+//               <img src="./1.png" alt="Pics" className="mt-3 imght"/>
+//             </div> */}
+//             {/* {data?
+//                 data.map((item,i)=>{
+//                     console.log("check", item)
+//                     return(
+//                         <div key={i} className="col-lg-4">
+//                         <img src={item?.photo?.data?.full_url} className="mt-3 imght" alt={`Image ${i}`} />
+//                       </div>
+//                     )
+//                 }):<div>Hello</div>
+//             } */}
+//             {data.map((item)=>(
+//                     <div key={item.id} className="col-lg-4">
+//                       <img src={item?.photo?.data?.full_url} className="mt-3 imght" alt={`Image ${item.id}`} />
+//                     </div>
+//                 )
+//               )
+//             }
+//           </div>
+//         </div>
+//       </SRLWrapper>
+//     </Layout>
+//   );
+// };
+
+// export default Gallery;
+
+
+
+
+
+
+// import { SRLWrapper } from "simple-react-lightbox";
+import Layout from "../Component/Layout";
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+const Gallery = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://cms.maitretech.com/deepconvent/items/gallery?fields=*.*"
+        );
+        setData(response.data.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <Layout>
-      <SRLWrapper>
         <div className="container-fluid">
           <div className="mb-3 row">
-            {
-                images.map((item,i)=>{
-                    console.log("check", item)
-                    return(
-                        <div key={i} className="col-lg-4">
-                        <img src={item?.photo?.data?.full_url} className="mt-3 imght" alt={`Image ${i}`} />
-                      </div>
-                    )
-                })
-            }
+            {data.map((item) => (
+              <div key={item.id} className="col-lg-4">
+                <img
+                  src={item?.photo?.data?.full_url}
+                  className="mt-3 imght"
+                  alt={`Image ${item.id}`}
+                />
+              </div>
+            ))}
           </div>
         </div>
-      </SRLWrapper>
     </Layout>
   );
 };
 
 export default Gallery;
-
-
-
-
-
-
 
 
 
