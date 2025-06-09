@@ -7,7 +7,9 @@ import AboutSchool from './AboutSchool'
 import SchoolFacilities from './SchoolFacilities'
 import HomePageGallery from './HomePageGallery'
 import HomeNewsClder from './HomeNewsClder'
+import ReactGA from "react-ga4";
 
+ReactGA.initialize("G-T1F1GSY434");
 export default function Home() {
   return (
     <div>
