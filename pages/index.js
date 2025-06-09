@@ -9,7 +9,7 @@ import HomePageGallery from './HomePageGallery'
 import HomeNewsClder from './HomeNewsClder'
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-T1F1GSY434");
+ReactGA.initialize("G-6FNQPVVM2S");
 export default function Home() {
   return (
     <div>
